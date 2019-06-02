@@ -68,6 +68,7 @@ gulp.task('sass', function(){
 gulp.task('js', function() {
 	return gulp.src([
 			'src/libs/jquery/dist/jquery.min.js',
+			'src/libs/PgwSlider-master/pgwslider.min.js',
 			'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 			'src/js/common.js', // Always at the end
 			])
