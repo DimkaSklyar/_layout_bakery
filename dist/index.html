@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<title>КонтиКаф | HandMade Кондитерская</title>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1 col-2 d-lg-none">
+					<div class="mobile-menu">
+					</div>
+				</div>
+				<div class="col-xl-4 col-2">
+					<div class="top-logo">
+						<a href="index.html">
+							<div class="top-logo-inner">
+								<img src="img/logo.png" alt="">
+								<div class="top-logo-text">
+									<strong>КонтиКаф</strong>
+									<span>handmade</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-8 col-10 mobile-menu-show">
+					<nav class="top-navigation">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#Show_choisepay">Выбор покупателей</a></li>
+							<li><a href="#Show_about">О нас</a></li>
+							<li><a href="#Show_products">Наша продукция</a></li>
+							<li><a href="#Show_order">Заказ</a></li>
+							<li><a href="#Show_colloboration">Сотруднечество</a></li>
+							<li><a href="#Show_contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="slider-wrapper d-none d-sm-block">
+		<div class="slider slick-slider overhidden">
+			<div class="slick-slider-item">
+				<img src="img/slide-1.jpg" alt="">
+				<div class="slick-slider-item__desc">
+					<strong>Морковный торт</strong>
+					<p>Три слоя бесквита, грецкие орехи и свежая тертая морковь, приправленная корицей и мускатным орехом.</p>
+				</div>
+			</div>
+			<div class="slick-slider-item">
+				<img src="img/slide-2.jpg" alt="">
+				<div class="slick-slider-item__desc">
+					<strong>Вкусные торты для вашего мероприятия</strong>
+					<p>Идеально подходит для свадебных приемов, дней рождения и репетиционных ужинов.</p>
+				</div>
+			</div>
+			<div class="slick-slider-item">
+				<img src="img/slide-3.jpg" alt="">
+				<div class="slick-slider-item__desc">
+					<strong>Мини-кексы КонтиКаф</strong>
+					<p>Выпикая наши кексы мы используем только свежие ингредиенты.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="order-button-wrapper">
+			<a href="#small-dialog" class="btn popup-with-zoom-anim">Запланируй мероприятие</a>
+		</div>
+	</div>
+
+
+	<main>
+		<section class="carousel" id="Show_choisepay">
+			<div class="container">
+				<h2 class="title-section">Выбор покупателей</h2>
+				<p class="description-section">Всего лишь несколько из десертов которые вы любите</p>
+				<div class="row slick-carousel no-gutters">
+					<div class="col-custom">
+						<div class="carousel-item">
+							<div class="carousel-item__img">
+								<img src="img/products/product-1.jpg" alt="">
+							</div>
+							<div class="carousel-item__desc">
+								<h3>Торт Смешной</h3>
+								<p>Сделано с традиционной коркой крекера и запечено с прекрасным сливочным сыром.</p>
+								<span class="price">95 Р / 100 гр.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-custom">
+						<div class="carousel-item">
+							<div class="carousel-item__img">
+								<img src="img/products/product-2.jpg" alt="">
+							</div>
+							<div class="carousel-item__desc">
+								<h3>Пай Вишневый</h3>
+								<p>Рассыпчатое песочное тесто с начинкой из творога с ягодами вишни без косточки в желе.</p>
+								<span class="price">105 Р / 100 гр.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-custom">
+						<div class="carousel-item">
+							<div class="carousel-item__img">
+								<img src="img/products/product-3.jpg" alt="">
+							</div>
+							<div class="carousel-item__desc">
+								<h3>Магдаленка</h3>
+								<p>Домашний кеск с велеколепным заварным кремом и жевательным шоколадным печеньем</p>
+								<span class="price">100 Р / 100 гр.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-custom">
+						<div class="carousel-item">
+							<div class="carousel-item__img">
+								<img src="img/products/product-4.jpg" alt="">
+							</div>
+							<div class="carousel-item__desc">
+								<h3>Фондант шоколадный</h3>
+								<p>Шоколадный кекс с начинкой из темного шоколада, наполнена нежным творогом с сахаром</p>
+								<span class="price">75 Р / 100 гр.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-custom">
+						<div class="carousel-item">
+							<div class="carousel-item__img">
+								<img src="img/products/product-5.jpg" alt="">
+							</div>
+							<div class="carousel-item__desc">
+								<h3>Торт Павлова</h3>
+								<p>Нежнейшее безе с кремом на основе сыра маскароне со сливками, пюре маракуйи</p>
+								<span class="price">230 Р / 100 гр.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-button-wrapper">
+					<a href="#small-dialog" class="btn popup-with-zoom-anim">Оформить заказ</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="Show_about">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 d-none d-lg-block">
+						<div class="about__img">
+							<img src="img/about-photo.jpg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="about__desc">
+							<strong>Кондитерская</strong><br>
+							<h2>КонтиКаф</h2>
+							<p>КонтиКаф - это пекарня в американском стиле, основанная в 2015 году, чтобы принести подлинный вкус
+								американской домашней выпечки в Краснодаре. Мы сотрудничаем со множеством пекарен в Краснодаре и в
+								Краснодарском крае, такими как Патрик&Мари, Сup&Cake и др., что позволяет нам заниматься доставкой нашей
+								продукции по городу и Краю</p>
+							<p>В 2016 году мы стали расширяться от одной домашней пекарни до поставок в сетевые пекарни и
+								кондитерские, что позволило заниматься доставкой по Краю. Сегодня
+								продукцию нашей пекарни можно найти в таких городах как Краснодар, Майкоп, Армавир, Геленджик, Ейск,
+								Анапа, Сочи, Новороссийск и множества других. Не стесняйтесь просматривать наш сайт, чтобы узнать больше
+								о
+								нашей пекарне.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="products" id="Show_products">
+			<div class="container">
+				<h2 class="title-section">Наша продукция</h2>
+				<div class="row">
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-6.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Кекс на палочке">Кекс на палочке</strong>
+								<span class="price">90 Р / 1шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-7.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Трюфель">Трюфель</strong>
+								<span class="price">260 Р / 6шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-8.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Шоколадное печенье">Шоколадное печенье</strong>
+								<span class="price">150 Р / 3шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-9.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Молочное печенье">Молочное печенье</strong>
+								<span class="price">150 Р / 5шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-10.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Сахарное печенье">Сахарное печенье</strong>
+								<span class="price">45 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-11.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Клубничный кекс">Клубничный кекс</strong>
+								<span class="price">160 Р / 1шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-12.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Ванильный капкейк">Ванильный капкейк</strong>
+								<span class="price">160 Р / 100гр.</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-13.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Кокосовый капкейк">Кокосовый капкейк</strong>
+								<span class="price">160 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-14.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Вишнёвое пироженное">Вишнёвое пироженное</strong>
+								<span class="price">130 Р / 1шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-15.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Шоколадный рогалик">Шоколадный рогалик</strong>
+								<span class="price">90 Р / 1шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-16.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Набор трюфель">Набор трюфель</strong>
+								<span class="price">190 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-17.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Торт трюфельный">Торт трюфельный</strong>
+								<span class="price">170 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-18.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Клюбничный трюфель">Клюбничный трюфель</strong>
+								<span class="price">170 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-19.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Чизкейк слоёный">Чизкейк слоёный</strong>
+								<span class="price">190 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-20.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Печенье Вупи">Печенье Вупи</strong>
+								<span class="price">70 Р / 1шт</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-21.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Лаймовый чизкейк">Лаймовый чизкейк</strong>
+								<span class="price">190 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-22.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Сливочный торт">Сливочный торт</strong>
+								<span class="price">140 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-3 col-sm-4 col-6">
+						<div class="products-item">
+							<div class="products-item__img">
+								<img src="img/products/product-23.jpg" alt="">
+							</div>
+							<div class="products-item__desc">
+								<strong class="products-name" title="Кокосовый брауни">Кокосовый брауни</strong>
+								<span class="price">200 Р / 100гр</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-button-wrapper">
+					<a href="#small-dialog" class="btn popup-with-zoom-anim">Оформить заказ</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="order" id="Show_order">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-7 offset-xl-1 col-6 d-none d-lg-block">
+						<div class="order-desc">
+							<h2>Онлайн заказ</h2>
+							<p>Заказ на сайте осуществляется путём заполнения формы, после чего с Вами свяжутся для оформления заказа,
+								для ускореения приёма заказа, пожалуйста выберете зарее понравивщуюся продукцию.</p>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-12">
+						<div class="order-contacts">
+							<h2>Заказать сейчас</h2>
+							<address>
+								<a href="tel:+79181233211">Тел: +7 (918) 123-32-11</a>
+								<a href="mailto:">Email: info@kontikaf.ru</a>
+								<a href="#small-dialog" class="btn popup-with-zoom-anim btn-reverse">Обратная связь</a>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="delivery">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<div class="delivery-item">
+							<h2>Местная доставка</h2>
+							<p>Все наши вкусные десерты можно заказать для доставки на дом или для корпоративного бизнеса в очень
+								быстрое время в Краснодаре. Все заказы должны быть размещены до 17:00 ежедневно, чтобы отправить их на
+								следующий день.</p>
+							<a href="#Show_contacts" class="btn">Контакты</a>
+							<img src="img/delivery-1.jpg" alt="" class="delivery-img-1 d-none d-md-block">
+						</div>
+					</div>
+					<div class="col-md-6 col-12">
+						<div class="delivery-item">
+							<img src="img/delivery-2.jpg" alt="" class="delivery-img-2">
+							<h2>Доставка по краю</h2>
+							<p>Наши продукты могут быть доставлены прямо к вашей двери в любую точку Краснодарского края для любых
+								особых случаев. Только для заказов свыше 6000 рублей!</p>
+							<a href="#Show_contacts" class="btn">Контакты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="colloboration" id="Show_colloboration">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xl-6 col-12">
+						<div class="colloboration-item">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-11 offset-md-1 col-12">
+										<h2>Сотруднечество с нами</h2>
+									</div>
+									<div class="col-md-4 offset-md-1">
+										<div class="colloboration-item__desc">
+											<p>Если вы являетесь владельцем пекарни или какой-либо кондитерской, мы предлагаем вам
+												сотруднечество на выгодных условиях. Вы удивитесь узнав о философии нашей пекарни, и конечно же
+												от вкуса наших удивительных сладостей. Чтобы связаться с нами и узнать больше о взаимовыгодных
+												отношениях, просто заполните форму и мы свяжемся с вами в самое блежайшее время.</p>
+										</div>
+									</div>
+									<div class="col-md-7 col-12">
+										<h3>Связаться для Cотрудничества</h3>
+										<form id="feedback">
+											<div class="input-wrap">
+												<input type="text" name="name" id="name" placeholder="Имя *" required>
+												<input type="email" name="email" id="email" placeholder="E-mail *" required>
+												<input type="text" name="phone" id="phone" placeholder="Телефон *" required>
+											</div>
+											<textarea name="comment" id="comment" cols="30" rows="3" placeholder="Сообщение"></textarea>
+											<div id="message-result">
+												<button type="submit" form="feedback" class="btn">Отправить</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 d-xl-block d-none">
+						<div class="colloboration-item__img"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partner" id="Show_contacts">
+			<div class="container">
+				<h2 class="title-section">Где найти нашу продукцию</h2>
+				<p class="description-section">Наши портнёры любезно предоставляют вам ознакомиться с нашей продукцией</p>
+				<div class="row no-gutters">
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="partner-item">
+							<div class="partner-item__img">
+								<img src="img/partner-1.jpg" alt="">
+							</div>
+							<div class="partner-item__text">
+								<a href="https://patrickmary.ru/" target="_blank">
+									<h3>Патрик&Мари</h3>
+								</a>
+								<address>
+									<ul>
+										<li>Краснодар, ул. 1 Мая, 168</li>
+										<li><a href="tel:+78007775955">+7 (800) 777-59-55</a></li>
+										<li><a href="mailto:sbyt_madyar@mail.ru">sbyt_madyar@mail.ru</a></li>
+										<li>Каждый день с 9:00 до 19:00</li>
+									</ul>
+								</address>
+								<a href="https://yandex.ru/map-widget/v1/?um=constructor%3AV_4MIJ26Vxu2nr-uxfsI-AhhAvvgP9LX&amp;source=constructor"
+									class="btn btn-reverse popup-gmaps">Посмотреть на карте</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="partner-item">
+							<div class="partner-item__img">
+								<img src="img/partner-2.jpg" alt="">
+							</div>
+							<div class="partner-item__text">
+								<a href="https://www.instagram.com/cup.cake.krd/" target="_blank">
+									<h3>Cup&Cake</h3>
+								</a>
+								<address>
+									<ul>
+										<li>Краснодар, ул. Красная, 90</li>
+										<li><a href="tel:+79883552808">+7 (988) 355-28-08</a></li>
+										<li><a href="mailto:sbyt_madyar@mail.ru">cup.cake.krd@mail.ru</a></li>
+										<li>Каждый день с 9:00 до 22:00</li>
+									</ul>
+								</address>
+								<a href="https://yandex.ru/map-widget/v1/?um=constructor%3AV_4MIJ26Vxu2nr-uxfsI-AhhAvvgP9LX&amp;source=constructor"
+									class="btn btn-reverse popup-gmaps">Посмотреть на карте</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="partner-item">
+							<div class="partner-item__img">
+								<img src="img/partner-3.jpg" alt="">
+							</div>
+							<div class="partner-item__text">
+								<a href="https://www.desertoria.ru" target="_blank">
+									<h3>Десертория</h3>
+								</a>
+								<address>
+									<ul>
+										<li>Краснодар, ул. Казбекская, 1</li>
+										<li><a href="tel:+79284636181">+7 (928) 463‑61-81</a></li>
+										<li><a href="mailto:sbyt_madyar@mail.ru">desertoria@mail.ru</a></li>
+										<li>Каждый день с 9:00 до 21:00</li>
+									</ul>
+								</address>
+								<a href="https://yandex.ru/map-widget/v1/?um=constructor%3AV_4MIJ26Vxu2nr-uxfsI-AhhAvvgP9LX&amp;source=constructor"
+									class="btn btn-reverse popup-gmaps">Посмотреть на карте</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="brand-partner">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-4 col-12">
+						<h2>Наши партнёры</h2>
+					</div>
+					<div class="col-lg-2 col-sm-3 col-6">
+						<a href="https://patrickmary.ru/" target="_blank">
+							<div class="brand-partner-img">
+								<img src="img/partner/parnter-1.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-2 col-sm-3 col-6">
+						<a href="https://www.instagram.com/explore/locations/1015242635/la-menta-bakery/" target="_blank">
+							<div class="brand-partner-img">
+								<img src="img/partner/parnter-2.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-2 col-sm-3 col-6">
+						<a href="http://sweetlips.ru/" target="_blank">
+							<div class="brand-partner-img">
+								<img src="img/partner/parnter-3.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-2 col-sm-3 col-6">
+						<a href="http://house-bakery.ru" target="_blank">
+							<div class="brand-partner-img">
+								<img src="img/partner/parnter-4.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="fallow">
+			<div class="container-fluid  zoom-gallery">
+				<h2>Следите за нами в instagram @recepty_sladosty</h2>
+				<div class="row no-gutters">
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-1_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-1.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-2_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-2.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-3_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-3.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-4_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-4.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-5_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-5.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-6_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-6.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-6">
+						<a href="img/instagram/insta-7_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-7.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-6">
+						<a href="img/instagram/insta-8_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-8.jpg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-9_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-9.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-10_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-10.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-11_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-11.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-12_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-12.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-13_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-13.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-4">
+						<a href="img/instagram/insta-14_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-14.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-6">
+						<a href="img/instagram/insta-15_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-15.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg col-md-3 col-6">
+						<a href="img/instagram/insta-16_1.jpg">
+							<div class="fallow-item">
+								<img src="img/instagram/insta-16.jpg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-6">
+					<div class="footer-item">
+						<h3>Мы приветствуем посетителей в нашем сайте и хотели бы, чтобы вы присоединились к нам в социальных сетях
+						</h3>
+						<ul class="social">
+							<li><a href="https://vk.com/"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.pinterest.ru/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 offset-xl-1 col-lg-4 col-12 bottom-logo flex-first flex-lg-unordered">
+					<a href="index.html">
+						<div class="top-logo-inner">
+							<img src="img/logo.png" alt="">
+							<div class="top-logo-text">
+								<strong>КонтиКаф</strong>
+								<span>handmade</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 offset-xl-1 col-lg-4 col-12">
+					<address>
+						<ul>
+							<li>Краснодар, ул. 1 Мая, 59</li>
+							<li><a href="tel:+79181233211">Тел: +7 (918) 123-32-11</a></li>
+							<li><a href="mailto:">Email: info@kontikaf.ru</a></li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<p>© Copyright | HandMade кодитерская КонтиКаф 2019. Все права защищены.</p>
+	</div>
+
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-inner">
+			<h1>Обратная связь</h1>
+			<p>Мы перезвоним вам в течение 2 минут, просто введите свой номер ниже</p>
+			<form id="callback">
+				<div class="input-wrap">
+					<input type="text" name="name" id="name" placeholder="Имя *" required>
+					<input type="text" name="phone" id="phone2" placeholder="Телефон *" required>
+				</div>
+				<div id="message-result-callback">
+					<button type="submit" form="callback" class="btn btn-reverse">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
