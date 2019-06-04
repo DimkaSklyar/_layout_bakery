@@ -34,6 +34,11 @@ $("#feedback").submit(function (e) {
   AjaxFormRequest('message-result', 'feedback', './feedback.php');
 });
 
+$("#callback").submit(function (e) { 
+  e.preventDefault();
+  AjaxFormRequest('message-result-callback', 'callback', './callback.php');
+});
+
 function mask(event) {
   var matrix = "+7 (___) ___ __ __",
     i = 0,
@@ -52,6 +57,10 @@ var input = document.querySelector("#phone");
 input.addEventListener("input", mask, false);
 input.addEventListener("focus", mask, false);
 input.addEventListener("blur", mask, false);
+var input = document.querySelector("#phone2");
+input.addEventListener("input", mask, false);
+input.addEventListener("focus", mask, false);
+input.addEventListener("blur", mask, false);
 
 $(function(){
   $("a[href^='#Show']").click(function(){
@@ -63,6 +72,35 @@ $(function(){
 
 
 $(document).ready(function () {
+
+$(".mobile-menu").click(function (e) { 
+  e.preventDefault();
+  $(".mobile-menu-show").slideToggle();
+  $(this).toggleClass("active");
+});
+
+
+  $('.zoom-gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	});
 
 	$('.popup-with-zoom-anim').magnificPopup({
 		type: 'inline',
@@ -78,6 +116,16 @@ $(document).ready(function () {
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
+  });
+  
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
 	});
 
   $(".slick-slider").slick();
@@ -90,6 +138,7 @@ $(document).ready(function () {
   autoplay: true,
   autoplaySpeed: 2000,
   dots: false,
+  arrows: true,
   responsive: [
     {
       breakpoint: 1024,
@@ -101,17 +150,20 @@ $(document).ready(function () {
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 992,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: false
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
       }
     }
     // You can unslick at a given breakpoint now by adding:

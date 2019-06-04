@@ -25,6 +25,53 @@ a
 	&:active
 		outline: none 0
 
+.slick-dots
+	li
+		button
+			&:before
+				color: #feb3cd
+				font-size: 16px
+	li.slick-active
+		button
+			&:before
+				color: #9d6fc4
+.mobile-menu
+	display: flex
+	height: 100%
+	align-items: center
+	font-size: 40px
+	color: $accent
+	position: relative
+	&:before
+		position: absolute
+		content: '\f0c9'
+		font-family: "FontAwesome"
+		transition: .3s
+.active
+	&:before
+		content: '\f00d'
+
+.mobile-menu-show
+	+media-breakpoint-down(md)
+		display: none
+
+.slick-prev,
+.slick-next
+	left: -75px
+	&:before
+		content: "\f177"
+		font-family: "FontAwesome"
+		font-size: 22px
+		color: #fff
+		background-color: #9d6fc4
+		border-radius: 50%
+		padding: 15px
+.slick-next
+	right: -45px
+	left: auto
+	&:before
+		content: "\f178"
+
 .btn
 	display: inline-block
 	padding: 20px 40px
@@ -46,6 +93,10 @@ section
 		text-align: center
 		letter-spacing: 7px
 		position: relative
+		+media-breakpoint-down(sm)
+			font-size: 75px
+		+media-breakpoint-down(xs)
+			font-size: 60px
 		&:before
 			content: ''
 			position: absolute
@@ -62,10 +113,17 @@ section
 		color: #767676
 		font-size: 23px
 		padding-bottom: 40px
-.slick-slider
-	height: calc(100vh - 100px)
+		+media-breakpoint-down(xs)
+			font-size: 18px
+.overhidden
 	overflow: hidden
+.slick-slider
+	padding-top: 93px
+	height: 100%
 	.slick-slide
+		&:focus
+			outline: none 0
+			border: none
 		img
 			object-fit: contain
 			width: 100%
@@ -78,6 +136,9 @@ section
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+			+media-breakpoint-down(md)
+				text-align: center
+				width: 80%
 			strong
 				font-family: 'Campanella', sans-serif
 				font-size: 110px
@@ -86,9 +147,13 @@ section
 				line-height: 0.8
 				margin-bottom: 30px
 				display: inline-block
+				+media-breakpoint-down(md)
+					font-size: 90px
 			p
 				color: #767676
 				font-size: 22px
+				+media-breakpoint-down(md)
+					font-size: 16px
 .order-button-wrapper
 	padding: 40px 0 0
 	text-align: center
@@ -101,6 +166,11 @@ ul
 	z-index: 999999
 	position: relative
 	background-color: #fff
+	position: fixed
+	width: 100%
+	box-shadow: 1px 3px 20px 0 rgba(254, 179, 205, 0.5)
+	+media-breakpoint-down(xs)
+		padding: 15px 0
 .top-logo
 	&-inner
 		display: flex
@@ -129,18 +199,34 @@ ul
 		justify-content: flex-end
 		align-items: center
 		height: inherit
+		+media-breakpoint-down(md)
+			flex-direction: column
+			align-items: flex-start
 		li
 			margin-left: 15px
+			+media-breakpoint-down(md)
+				margin-left: 0
+				margin-top: 15px
 			a
 				color: $text-color
 				text-transform: capitalize
 				font-size: 13px
 				transition: .2s
 				font-weight: 500
+				+media-breakpoint-down(md)
+					border-bottom: 1px solid $accent
 				&:hover
 					color: $accent
 
 .carousel
+	+media-breakpoint-down(md)
+		padding: 50px 0
+	+media-breakpoint-down(xs)
+		padding-top: 150px
+	h2
+		+media-breakpoint-down(xs)
+			line-height: 0.9
+			padding-top: 40px
 	&-item
 		&__img
 			object-fit: contain
@@ -154,6 +240,12 @@ ul
 				letter-spacing: 5px
 				padding: 20px 0
 				color: #403646
+				+media-breakpoint-down(lg)
+					font-size: 43px
+				+media-breakpoint-down(sm)
+					font-size: 60px
+				+media-breakpoint-down(xs)
+					font-size: 35px
 			p
 				font-size: 16px
 				color: #767676
@@ -167,6 +259,8 @@ ul
 		padding: 0 10px
 	.slick-carousel
 		height: auto
+		+media-breakpoint-down(lg)
+		padding: 0
 
 .about
 	background: url('../img/section-bcg.jpg') no-repeat
@@ -196,6 +290,8 @@ ul
 			position: relative
 			padding-bottom: 50px
 			display: inline-block
+			+media-breakpoint-down(xs)
+				font-size: 80px
 			&:before
 				position: absolute
 				content: ''
@@ -207,8 +303,14 @@ ul
 				background: url('../img/section-decoration-2.png') no-repeat
 		p
 			line-height: 1.9
+			+media-breakpoint-down(lg)
+				font-size: 15px
 
 .products
+	h2
+		+media-breakpoint-down(xs)
+			line-height: 0.9
+			padding-top: 40px
 	&-name
 		display: block
 	&-item
@@ -244,6 +346,9 @@ ul
 		display: inline-block
 		padding-bottom: 20px
 		margin-bottom: 20px
+		+media-breakpoint-down(xs)
+			line-height: 0.9
+			padding-bottom: 40px
 		&:before
 			content: ''
 			position: absolute
@@ -269,10 +374,14 @@ ul
 			color: #403646
 			font-size: 26px
 			font-weight: 300
+			+media-breakpoint-down(lg)
+				font-size: 19px
 		.btn
 			margin-top: 30px
 
 .delivery
+	+media-breakpoint-down(xs)
+		padding: 40px 0
 	&-item
 		overflow: hidden
 		img
@@ -291,7 +400,8 @@ ul
 			margin-top: 20px
 		.delivery-img-2
 			margin-bottom: 20px
-
+			+media-breakpoint-down(sm)
+				margin-top: 20px
 .colloboration
 	padding: 0
 	background-color: #fcecf6
@@ -303,6 +413,8 @@ ul
 		background-size: cover
 	&-item
 		padding: 80px 0
+		+media-breakpoint-down(lg)
+			padding: 20px 0
 	h2
 		font-family: 'Campanella', sans-serif
 		font-size: 90px
@@ -312,6 +424,12 @@ ul
 		margin-bottom: 20px
 		position: relative
 		padding-bottom: 30px
+		+media-breakpoint-down(sm)
+			line-height: 0.8
+			padding-bottom: 50px
+			padding-left: 0
+		+media-breakpoint-down(xs)
+			font-size: 60px
 		&:before
 			content: ''
 			position: absolute
@@ -327,9 +445,13 @@ ul
 		padding-left: 20px
 		font-weight: 500
 		margin-bottom: 25px
+		+media-breakpoint-down(sm)
+			padding-left: 0
 	#feedback
 		padding-right: 30px
 		padding-left: 20px
+		+media-breakpoint-down(sm)
+			padding-left: 0
 		input,
 		textarea
 			border: none
@@ -346,10 +468,19 @@ ul
 
 
 .partner
+	h2
+		+media-breakpoint-down(md)
+			font-size: 85px
+		+media-breakpoint-down(sm)
+			line-height: 0.9
+			margin-bottom: 40px
+			padding-top: 15px
 	&-item
 		overflow: hidden
 		padding-left: 10px
 		padding-right: 10px
+		+media-breakpoint-down(md)
+		margin-bottom: 20px
 		&__img
 			margin-bottom: 5px
 			img
@@ -396,12 +527,17 @@ ul
 .brand-partner
 	background-color: #fcecf6
 	padding: 80px 0 100px
+	+media-breakpoint-down(md)
+		padding: 60px 0 80px
 	h2
 		font-family: 'Campanella', sans-serif
 		font-size: 100px
 		letter-spacing: 6px
 		line-height: .6
 		font-weight: 400
+		+media-breakpoint-down(md)
+			text-align: center
+			margin-bottom: 40px
 	&-img
 		img
 			object-fit: contain
@@ -418,12 +554,41 @@ ul
 		.col
 			overflow: hidden
 	&-item
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: #403646
+			opacity: 0
+			transition: .3s
+		&:after
+			position: absolute
+			content: '\f00e'
+			font-family: "FontAwesome"
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			color: #fff
+			opacity: 0
+			font-size: 30px
+			transition: .3s
+		&:hover:before
+			opacity: 1
+		&:hover:after
+			opacity: 1
+			font-size: 60px
 		img
 			width: 100%
 
 footer
 	background-color: #403646
 	padding: 80px 0
+	+media-breakpoint-down(md)
+		padding: 40px 0
 	h3
 		font-size: 14px
 		color: #fff
@@ -440,7 +605,12 @@ footer
 		align-items: flex-start
 		display: flex
 		justify-content: center
+		+media-breakpoint-down(md)
+			justify-content: flex-start
+			margin-bottom: 30px
 	address
+		+media-breakpoint-down(md)
+			margin-top: 30px
 		ul
 			li
 				color: #fff
@@ -461,6 +631,8 @@ footer
 					content: '\f003'
 				a
 					color: #fff
+					&:hover
+						color: $accent
 
 
 #small-dialog
